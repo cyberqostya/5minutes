@@ -1,5 +1,5 @@
 const notComputerBlock = new NotComputer();
 
-if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ) {
+if (!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
   notComputerBlock.addOnPage();
 }
